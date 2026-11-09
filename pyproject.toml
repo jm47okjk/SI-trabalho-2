@@ -1,2 +1,10 @@
+[project]
+name = "lisboa-de-perto"
+version = "0.1.0"
+dependencies = [
+    "Flask>=3.0.0",
+    "Flask-SQLAlchemy>=3.1.0",
+]
+
 [tool.vercel]
 entrypoint = "run:app"

@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 # Cria a instância da aplicação Flask
 app = Flask(__name__)
 
-# Se estiver na Vercel grava em /tmp, caso contrário na raiz local
+# Na Vercel o sistema de ficheiros é read-only, usamos /tmp/
 if os.environ.get('VERCEL'):
     db_path = '/tmp/database.db'
 else:
@@ -16,9 +16,6 @@ else:
 app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{db_path}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Inicializa a extensão da Base de Dados
 db = SQLAlchemy(app)
 
-# IMPORTANTE: Importar os modelos e as rotas depois de criar app e db
-# Isto evita importações circulares e regista as rotas no Flask
 from app import models, routes
