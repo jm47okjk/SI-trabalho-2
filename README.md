@@ -3,7 +3,7 @@
 Uma aplicação web dinâmica que serve como guia turístico e gastronómico para descobrir Lisboa. O projeto evoluiu a partir da versão estática anterior, passando a integrar uma arquitetura backend em Flask com base de dados relacional gerida através do Flask-SQLAlchemy, permitindo apresentar os monumentos, bairros e tradições culinárias da cidade de forma modular e dinâmica.
 
 ## Pré-visualização: <small>*O projeto encontra-se publicado e funcional na Vercel*</small>
-🔗 [Visitar Lisboa de Perto]([https://lisboa-de-perto.vercel.app](https://lisboa-de-perto-app.vercel.app))
+🔗 [Visitar Lisboa de Perto](https://lisboa-de-perto-app.vercel.app)
 
 
 ![Pré-visualização da página inicial do guia Lisboa de perto](./pagina_inicial.png)
