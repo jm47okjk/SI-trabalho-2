@@ -1,4 +1,4 @@
-# Lisboa de perto (Versão Dinâmica)
+# Lisboa de perto
 
 Uma aplicação web dinâmica que serve como guia turístico e gastronómico para descobrir Lisboa. O projeto evoluiu a partir da versão estática anterior, passando a integrar uma arquitetura backend em Flask com base de dados relacional gerida através do Flask-SQLAlchemy, permitindo apresentar os monumentos, bairros e tradições culinárias da cidade de forma modular e dinâmica.
 
