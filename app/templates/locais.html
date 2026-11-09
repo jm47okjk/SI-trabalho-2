@@ -1,0 +1,157 @@
+﻿<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descobre monumentos históricos e bairros emblemáticos de Lisboa."
+    />
+    <title>Locais a visitar — Lisboa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/locais.css') }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="hero">
+        <p class="eyebrow">Guia de viagem · Portugal</p>
+        <h1>Histórias em cada esquina.</h1>
+        <p class="hero-intro">
+          Monumentos, miradouros e bairros que guardam a alma de Lisboa.
+        </p>
+      </div>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a class="brand" href="{{ url_for('index') }}" aria-label="Lisboa de perto — início">Lisboa de perto</a>
+        <div class="nav-links">
+          <a href="{{ url_for('index') }}">Início</a>
+          <a href="{{ url_for('locais') }}" aria-current="page">Locais a visitar</a>
+          <a href="{{ url_for('gastronomia') }}">Gastronomia</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">Roteiro lisboeta</p>
+        <h2>Três paragens para começar</h2>
+        <p>
+          Da margem do Tejo às ruas antigas da cidade, cada lugar conta uma
+          parte diferente da história de Lisboa.
+        </p>
+      </section>
+
+      <section class="places-grid" aria-label="Locais a visitar">
+        <article class="place-card">
+          <a
+            class="place-image"
+            href="https://pt.wikipedia.org/wiki/Torre_de_Bel%C3%A9m"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Saber mais sobre a Torre de Belém"
+          >
+            <img
+              src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Bel%C3%A9m_Tower_in_Lisbon%2C_Portugal.jpg/960px-Bel%C3%A9m_Tower_in_Lisbon%2C_Portugal.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail"
+              alt="Torre de Belém junto ao rio Tejo"
+              loading="lazy"
+            />
+            <span class="image-number">01</span>
+          </a>
+          <div class="place-copy">
+            <p class="place-type">Monumento · Belém</p>
+            <h3>Torre de Belém</h3>
+            <p>
+              Erguida no século XVI junto ao Tejo, é um dos grandes símbolos da
+              arquitetura manuelina e da época dos Descobrimentos.
+            </p>
+            <a
+              class="text-link"
+              href="https://pt.wikipedia.org/wiki/Torre_de_Bel%C3%A9m"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explorar a história <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <a
+            class="place-image"
+            href="https://pt.wikipedia.org/wiki/Castelo_de_S%C3%A3o_Jorge"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Saber mais sobre o Castelo de São Jorge"
+          >
+            <img
+              src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Castelo_de_S%C3%A3o_Jorge_%2810251035013%29.jpg/960px-Castelo_de_S%C3%A3o_Jorge_%2810251035013%29.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail"
+              alt="Castelo de São Jorge no alto de uma colina"
+              loading="lazy"
+            />
+            <span class="image-number">02</span>
+          </a>
+          <div class="place-copy">
+            <p class="place-type">Castelo · Santa Maria Maior</p>
+            <h3>Castelo de São Jorge</h3>
+            <p>
+              No alto de uma das colinas mais conhecidas, oferece muralhas
+              medievais e vistas amplas sobre a cidade e o rio.
+            </p>
+            <a
+              class="text-link"
+              href="https://pt.wikipedia.org/wiki/Castelo_de_S%C3%A3o_Jorge"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explorar a história <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <a
+            class="place-image"
+            href="https://pt.wikipedia.org/wiki/Alfama"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Saber mais sobre Alfama"
+          >
+            <img
+              src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Alfama%2C_Lisboa_-_2010-09-09.jpg/960px-Alfama%2C_Lisboa_-_2010-09-09.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail"
+              alt="Ruas estreitas e casas tradicionais de Alfama"
+              loading="lazy"
+            />
+            <span class="image-number">03</span>
+          </a>
+          <div class="place-copy">
+            <p class="place-type">Bairro histórico · Alfama</p>
+            <h3>Alfama</h3>
+            <p>
+              O bairro mais antigo da cidade convida a percorrer ruas estreitas,
+              descobrir pátios escondidos e ouvir Fado.
+            </p>
+            <a
+              class="text-link"
+              href="https://pt.wikipedia.org/wiki/Alfama"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explorar a história <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <aside class="visit-note">
+        <span aria-hidden="true">✳</span>
+        <p>
+          Dica: deixa algum tempo livre no roteiro. Em Lisboa, perder-se pelas
+          ruas também faz parte da visita.
+        </p>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <a href="{{ url_for('index') }}">← Voltar ao início</a>
+      <p>Lisboa, Portugal <span aria-hidden="true">·</span> Um guia para passear.</p>
+    </footer>
+  </body>
+</html>
